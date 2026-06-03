@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroForte - Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">Agro<span>Forte</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#pilares">Pilares</a></li>
+                    <li><a href="#calculadora">Impacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Equilíbrio entre Produção e Meio Ambiente</h1>
+            <p>Cultivando a tecnologia de hoje para alimentar o amanhã de forma sustentável.</p>
+            <a href="#pilares" class="btn-principal">Conheça Nossos Pilares</a>
+        </div>
+    </section>
+
+    <section id="pilares" class="features">
+        <div class="container">
+            <h2>Tecnologia a Serviço da Terra</h2>
+            <div class="grid-features">
+                <div class="card">
+                    <h3>🌾 Gestão Eficiente</h3>
+                    <p>Otimização do uso do solo e rotação de culturas para preservar os nutrientes naturais.</p>
+                </div>
+                <div class="card">
+                    <h3>💧 Preservação Hídrica</h3>
+                    <p>Sistemas de irrigação inteligente que reduzem o desperdício de água em até 40%.</p>
+                </div>
+                <div class="card">
+                    <h3>🚜 Carbono Zero</h3>
+                    <p>Uso de biofertilizantes e maquinário elétrico para neutralizar as emissões de CO₂.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculadora" class="interactive-section">
+        <div class="container">
+            <h2>Simulador de Impacto AgroForte</h2>
+            <p>Descubra a estimativa de economia de recursos ao adotar práticas sustentáveis por hectare.</p>
+            
+            <div class="calc-box">
+                <label for="hectares">Quantidade de Hectares:</label>
+                <input type="number" id="hectares" min="1" placeholder="Ex: 50">
+                <button id="btn-calcular">Calcular Economia</button>
+                
+                <div id="resultado" class="hidden">
+                    <p>💧 <strong>Água poupada:</strong> <span id="res-agua">0</span> litros/ano.</p>
+                    <p>🌱 <strong>CO₂ reduzido:</strong> <span id="res-carbono">0</span> kg/ano.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AgroForte. Cultivando um futuro sustentável.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
